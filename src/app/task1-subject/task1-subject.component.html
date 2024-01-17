@@ -1,0 +1,9 @@
+<form class="row g-3">
+
+  <div class="col-auto">
+    <input type="text" class="form-control" id="inputPassword2" [(ngModel)]="newTask" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3" (click)="crateTask()" >Create Task</button>
+  </div>
+</form>
