@@ -11,6 +11,7 @@ import { Task2SubjectComponent } from './task2-subject/task2-subject.component';
 import { FormsModule } from '@angular/forms';
 import { SubjectComponent } from './subject/subject.component';
 import { BeaviourSubjectComponent } from './beaviour-subject/beaviour-subject.component';
+import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BeaviourSubjectComponent } from './beaviour-subject/beaviour-subject.co
     Task1SubjectComponent,
     Task2SubjectComponent,
     SubjectComponent,
-    BeaviourSubjectComponent
+    BeaviourSubjectComponent,
+    ReplaySubjectComponent
   ],
   imports: [
     BrowserModule,
