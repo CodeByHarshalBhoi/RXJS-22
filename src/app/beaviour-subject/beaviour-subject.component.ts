@@ -10,6 +10,7 @@ export class BeaviourSubjectComponent implements OnInit{
 
   constructor(){
 
+
   }
   ngOnInit(): void {
     let subject = new BehaviorSubject(100);
@@ -25,7 +26,8 @@ export class BeaviourSubjectComponent implements OnInit{
 
     subject.subscribe((res)=>{
       console.log("Subscriber 3: "+res);
-
     })
+
+    subject.next(2001);
   }
 }
