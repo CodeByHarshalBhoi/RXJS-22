@@ -1,0 +1,7 @@
+<div class="container">
+  <ul *ngFor="let data of data" class="list-group">
+    <li class="list-group-item ">{{data}}</li>
+  </ul>
+  <button class="btn btn-success" (click)="onSubscribe()">Subscribe</button>
+  <button class="btn btn-danger" (click)="onUnSubscribe()">Unsubscribe</button>
+</div>

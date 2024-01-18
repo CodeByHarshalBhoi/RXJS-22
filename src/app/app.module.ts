@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { SubjectComponent } from './subject/subject.component';
 import { BeaviourSubjectComponent } from './beaviour-subject/beaviour-subject.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { UnsubscribeComponent } from './unsubscribe/unsubscribe.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ReplaySubjectComponent } from './replay-subject/replay-subject.componen
     Task2SubjectComponent,
     SubjectComponent,
     BeaviourSubjectComponent,
-    ReplaySubjectComponent
+    ReplaySubjectComponent,
+    AsyncSubjectComponent,
+    UnsubscribeComponent
   ],
   imports: [
     BrowserModule,

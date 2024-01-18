@@ -5,12 +5,16 @@
 
   <div class="row">
     <div class="col">
-      <h3> Add Video</h3>
+      <h3>{{methodInterval?'Interval started': 'Add Video'}}</h3>
+    </div>
+
+    <div class="col text-right">
+      <button class="btn btn-warning" (click)="toggleMethod()">Toggle Method</button>
     </div>
   </div>
   <hr>
 
-  <div class="row">
+  <div *ngIf="!methodInterval" class="row">
     <div class="col-md-4">
       <input type="text" class="form-control" #video>
     </div>
@@ -18,7 +22,7 @@
       <button class="btn btn-success" (click)="onVideoAdd(video.value)">Add Video</button>
     </div>
   </div>
-  <hr>
+  <hr  *ngIf="!methodInterval">
 
   <div class="row">
     <div class="col-md-4">

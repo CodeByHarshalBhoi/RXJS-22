@@ -18,10 +18,9 @@ export class FromEventComponent implements AfterViewInit{
     let count=0;
       fromEvent(this.getDataBtn.nativeElement, 'click').subscribe((res)=>{
         console.log(res);
-        this.dataService.printData(++count,   'dataList2')
-        this.dataService.printData(++count,   'dataList')
+        this.dataService.printData(++count, 'dataList2')
+        this.dataService.printData(++count, 'dataList')
       })
   }
-
 
 }
