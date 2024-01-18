@@ -14,6 +14,8 @@ import { BeaviourSubjectComponent } from './beaviour-subject/beaviour-subject.co
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { UnsubscribeComponent } from './unsubscribe/unsubscribe.component';
+import { IntervalTimeComponent } from './interval-time/interval-time.component';
+import { ToArrayComponent } from './to-array/to-array.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { UnsubscribeComponent } from './unsubscribe/unsubscribe.component';
     BeaviourSubjectComponent,
     ReplaySubjectComponent,
     AsyncSubjectComponent,
-    UnsubscribeComponent
+    UnsubscribeComponent,
+    IntervalTimeComponent,
+    ToArrayComponent
   ],
   imports: [
     BrowserModule,
